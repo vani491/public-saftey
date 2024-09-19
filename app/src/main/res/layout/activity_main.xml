@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!-- Declare any variables if needed (e.g., a ViewModel) -->
+    </data>
+<RelativeLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:textColor="?attr/colorOnBackground">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/logo"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:contentDescription="logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swiftwater"
+            android:textColor="#EBEDFA"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_condensed"
+            android:layout_marginTop="70dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ECHO Risk Assessment"
+            android:textColor="#EEF3FE"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:fontFamily="@font/roboto_condensed"
+            android:layout_marginTop="10dp"
+
+            android:shadowColor="#40000000"
+            android:shadowDx="0"
+            android:shadowDy="7"
+            android:shadowRadius="5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.app.institue"
+            android:textColor="#EBEDFA"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_condensed"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/start"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_condensed"
+            android:background="@drawable/circular_button_background"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© Dr Kousik, 2023"
+        android:textColor="#EBEDFA"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/roboto_condensed"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
+
+</layout>

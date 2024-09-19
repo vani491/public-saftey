@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#276EF1</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#D4E2FC</color>
+
+    <color name="background">#EEF3FE</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="onSecondary">#000000</color>
+    <color name="onBackground">#000000</color>
+    <color name="onSurface">#000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightest_blue">#D4E2FC</color>
+    <color name="blue">#276EF1</color>
+    <color name="light_blue">#A0BFF9</color>
+    <color name="slider_blue">#276EF1</color>
+
+
+    <!--  _________________________  -->
+    <color name="light_grey_blue">#6C7C83</color>
+    <color name="dark_grey_light_blue">#394145</color>
+    <color name="grey_light_blue">#6C7C83</color>
+    <color name="entry_counter">#5B91F4</color>
+    <color name="entry_bar">#A0BFF9</color>
+    <color name="back_circle">#D4E2FC</color>
+
+
+</resources>
+
+
+
+
+

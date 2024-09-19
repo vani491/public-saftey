@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background track -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" /> <!-- Rounded corners -->
+            <solid android:color="@color/light_blue" /> <!-- Track color -->
+            <size android:height="10dp" /> <!-- Ensure the track height is 10dp -->
+        </shape>
+    </item>
+
+    <!-- Progress track (optional if you want a different color for the filled portion) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="5dp" />
+                <solid android:color="@color/blue" />
+                <size android:height="10dp" /> <!-- Same height for consistency -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
+

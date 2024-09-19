@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="Theme.EchoApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <!-- Dark theme specific -->
+        <item name="android:windowBackground">@drawable/background_gradient_dark</item>
+        <item name="android:colorBackground">@color/background</item>
+        <!--<item name="android:colorSurface">@color/surface</item>-->
+        <!-- Customize other theme attributes as needed -->
+        <item name="android:windowLightStatusBar">false</item> <!-- For dark mode status bar icons -->
+        <item name="android:textColorSecondary">@color/lightest_blue</item>
+
+
+    </style>
+
+    <!-- Custom Light Theme for Specific Activities -->
+    <style name="Theme.EchoApplication.Light.CustomBackground" parent="Theme.EchoApplication">
+        <!-- Custom background for these activities -->
+        <item name="android:textColorSecondary">@color/lightest_blue</item>
+        <item name="android:windowBackground">@drawable/background_gradient_dark</item>
+    </style>
+
+
+</resources>

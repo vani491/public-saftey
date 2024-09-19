@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <style name="Theme.EchoApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+    <item name="colorSecondary">@color/colorSecondary</item>
+    <item name="android:windowBackground">@color/background</item>
+    <item name="android:colorBackground">@color/background</item>
+    <item name="android:windowLightStatusBar">true</item> <!-- For light mode status bar icons -->
+  </style>
+  <!-- Custom Light Theme for Specific Activities -->
+  <style name="Theme.EchoApplication.Light.CustomBackground" parent="Theme.EchoApplication">
+    <!-- Custom background for these activities -->
+    <item name="android:windowBackground">@drawable/background_gradient_light</item> <!-- Change to your yellow background -->
+  </style>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D4E2FC</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#102C60</color>
+    <color name="surface">#121212</color>
+    <color name="onPrimary">#000000</color>
+    <color name="onSecondary">#000000</color>
+    <color name="onBackground">#FFFFFF</color>
+    <color name="onSurface">#FFFFFF</color>
+
+    <!--  _________________________  -->
+    <color name="light_grey_blue">#A0BFF9</color>
+    <color name="dark_grey_light_blue">#D4E2FC</color>
+    <color name="grey_light_blue">#A0BFF9</color>
+    <color name="entry_counter">#D4E2FC</color>
+    <color name="entry_bar">#D4E2FC</color>
+    <color name="back_circle">#D4E2FC</color>
+</resources>
+
