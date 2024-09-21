@@ -16,5 +16,6 @@
     <color name="entry_counter">#D4E2FC</color>
     <color name="entry_bar">#D4E2FC</color>
     <color name="back_circle">#D4E2FC</color>
+    <color name="alert_back">#102C60</color>
 </resources>
 

@@ -92,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:text="Class (Grade)"
                 android:textSize="16dp"
+                android:textStyle="bold"
                 android:fontFamily="@font/roboto_condensed"
                 android:textColor="@color/dark_grey_light_blue"
                 android:layout_marginTop="34dp"
@@ -116,7 +117,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1"
+                    android:text="IV"
+                    android:textStyle="bold"
                     android:textSize="16dp"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/roboto_condensed"
@@ -146,109 +148,14 @@
                     android:thumb="@drawable/slider_thumb" />
 
                 <!-- Marker Layout for 7 vertical lines -->
-                <LinearLayout
+                <include
+                    android:layout_marginTop="-5dp"
+                    layout="@layout/seek_bar_meter_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="-5dp"
-                    android:orientation="horizontal">
-
-                    <!-- Create 7 equally spaced vertical markers -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="6dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="5dp"
-                        android:gravity="end">
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="15dp"
-                            android:background="@color/entry_bar"
-                            />
-                    </LinearLayout>
-
-                    <LinearLayout
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="6dp"
-                        android:layout_weight="1"
-                        android:gravity="end">
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="6dp"
-                            android:background="@color/entry_bar" />
-                    </LinearLayout>
-
-                    <LinearLayout
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="6dp"
-                        android:layout_weight="1"
-                        android:gravity="end">
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="6dp"
-                            android:background="@color/entry_bar" />
-                    </LinearLayout>
-
-                    <LinearLayout
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="6dp"
-                        android:layout_weight="1"
-                        android:gravity="end">
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="6dp"
-                            android:background="@color/entry_bar" />
-                    </LinearLayout>
-
-                    <LinearLayout
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="6dp"
-                        android:layout_weight="1"
-                        android:gravity="end">
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="6dp"
-                            android:background="@color/entry_bar" />
-                    </LinearLayout>
-
-                    <LinearLayout
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="6dp"
-                        android:layout_weight="1"
-                        android:gravity="end">
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="6dp"
-                            android:background="@color/entry_bar" />
-                    </LinearLayout>
-
-                    <LinearLayout
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="6dp"
-                        android:layout_weight="1"
-                        android:gravity="end">
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="6dp"
-                            />
-                    </LinearLayout>
+                    />
 
 
-
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -299,11 +206,10 @@
                         android:textColor="@color/colorPrimary"
                         android:layout_marginLeft="10dp"
                         />
-
-
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/nextButton"
                     android:layout_width="95dp"
                     android:layout_height="40dp"
                     android:background="@drawable/solid_rounded_buttin_background"

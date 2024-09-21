@@ -31,12 +31,12 @@ class MainActivity : AppCompatActivity() {
     //handle click event
     private fun navigationHandler() {
         binding.tvStart.setOnClickListener {
-            navigateHandler()
+            navigateToEntry()
         }
     }
 
     //handle navigation event
-    private fun navigateHandler() {
+    private fun navigateToEntry() {
         val intent = Intent(applicationContext, EntryActivity::class.java)
         startActivity(intent)
     }

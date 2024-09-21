@@ -9,18 +9,19 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.publicsafety.echoapplication.databinding.ActivityClassBinding
 import com.publicsafety.echoapplication.databinding.ActivityEntryBinding
+import com.publicsafety.echoapplication.databinding.ActivityHazardsBinding
 import com.publicsafety.echoapplication.databinding.ActivityMainBinding
 import kotlin.math.roundToInt
 
-class ClassActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityClassBinding
+class HazardsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityHazardsBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         // Initialize the binding
-        binding = ActivityClassBinding.inflate(layoutInflater)
+        binding = ActivityHazardsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.entry)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -30,7 +31,7 @@ class ClassActivity : AppCompatActivity() {
 
 
         // Adding a listener to handle snap-to-nearest-point
-        binding.customSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+        binding.flowSpeedSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 // No action required during dragging
             }
@@ -56,21 +57,21 @@ class ClassActivity : AppCompatActivity() {
     //handle click event
     private fun navigationHandler() {
         binding.backButton.setOnClickListener {
-            navigateHandler()
+            finish();
         }
+
         binding.nextButton.setOnClickListener {
             navigateToHazards()
         }
     }
 
-    //handle navigation event
-    private fun navigateHandler() {
-        finish();
-    }
 
+
+    //handle navigation event
     private fun navigateToHazards() {
         val intent = Intent(applicationContext, HazardsActivity::class.java)
-        startActivity(intent)
+        //
+    // startActivity(intent)
     }
 
 
