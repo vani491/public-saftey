@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
         >
 
 
@@ -49,8 +50,8 @@
                         android:text="ECHO Risk Assessment"
                         android:textSize="18sp"
                         android:fontFamily="@font/roboto_condensed"
-                        android:textColor="@color/dark_grey_light_blue"
-
+                        android:textColor="@color/dark_light_grey_blue"
+                        android:textStyle="bold"
                         android:shadowDx="0"
                         android:shadowDy="7"
                         android:shadowRadius="5"
@@ -94,7 +95,7 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/roboto_condensed"
-                android:textColor="@color/dark_grey_light_blue"
+                android:textColor="@color/dark_light_grey_blue"
                 android:layout_marginTop="34dp"
                 />
 
@@ -174,7 +175,7 @@
                             android:text="Self rescue easy"
                             android:textSize="14dp"
                             android:fontFamily="@font/roboto_condensed"
-                            android:textColor="@color/dark_grey_light_blue"
+                            android:textColor="@color/dark_light_grey_blue"
                             />
 
                     </LinearLayout>
@@ -242,7 +243,7 @@
                             android:text="In between walking and running speed (5-12.5km/h)"
                             android:textSize="14dp"
                             android:fontFamily="@font/roboto_condensed"
-                            android:textColor="@color/dark_grey_light_blue"
+                            android:textColor="@color/dark_light_grey_blue"
                             />
 
                     </LinearLayout>
@@ -311,7 +312,7 @@
                             android:text="Above chest but less than 2m (6ft)"
                             android:textSize="14dp"
                             android:fontFamily="@font/roboto_condensed"
-                            android:textColor="@color/dark_grey_light_blue"
+                            android:textColor="@color/dark_light_grey_blue"
                             />
 
                     </LinearLayout>
@@ -380,7 +381,7 @@
                             android:text="Contaminants exceeding their PEL or known water-borne diseases present"
                             android:textSize="14dp"
                             android:fontFamily="@font/roboto_condensed"
-                            android:textColor="@color/dark_grey_light_blue"
+                            android:textColor="@color/dark_light_grey_blue"
                             />
 
                     </LinearLayout>
@@ -448,7 +449,7 @@
                             android:text="No wildlife"
                             android:textSize="14dp"
                             android:fontFamily="@font/roboto_condensed"
-                            android:textColor="@color/dark_grey_light_blue"
+                            android:textColor="@color/dark_light_grey_blue"
                             />
 
                     </LinearLayout>
@@ -498,8 +499,10 @@
                             android:paddingTop="15dp"
                             android:paddingBottom="15dp"
                             android:progress="3"
-                            android:progressDrawable="@drawable/seekbar_track"
+                            android:progressDrawable="@drawable/seek_baar_two"
                             android:thumb="@drawable/slider_thumb" />
+
+
 
                         <!-- Marker Layout for 7 vertical lines -->
                         <include
@@ -507,6 +510,7 @@
                             layout="@layout/seek_bar_meter_layout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+
                             />
 
 
@@ -516,7 +520,7 @@
                             android:text="10°C"
                             android:textSize="14dp"
                             android:fontFamily="@font/roboto_condensed"
-                            android:textColor="@color/dark_grey_light_blue"
+                            android:textColor="@color/dark_light_grey_blue"
                             />
 
                     </LinearLayout>
@@ -584,7 +588,7 @@
                             android:text="Hazards that may cause moderate injury"
                             android:textSize="14dp"
                             android:fontFamily="@font/roboto_condensed"
-                            android:textColor="@color/dark_grey_light_blue"
+                            android:textColor="@color/dark_light_grey_blue"
                             />
 
                     </LinearLayout>
@@ -598,7 +602,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
             android:layout_alignParentBottom="true"
             >
 

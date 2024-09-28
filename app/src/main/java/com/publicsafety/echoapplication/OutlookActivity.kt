@@ -9,19 +9,19 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.publicsafety.echoapplication.databinding.ActivityClassBinding
 import com.publicsafety.echoapplication.databinding.ActivityEntryBinding
-import com.publicsafety.echoapplication.databinding.ActivityHazardsBinding
 import com.publicsafety.echoapplication.databinding.ActivityMainBinding
+import com.publicsafety.echoapplication.databinding.ActivityOutlookBinding
 import kotlin.math.roundToInt
 
-class HazardsActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityHazardsBinding
+class OutlookActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityOutlookBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         // Initialize the binding
-        binding = ActivityHazardsBinding.inflate(layoutInflater)
+        binding = ActivityOutlookBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.entry)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -30,27 +30,6 @@ class HazardsActivity : AppCompatActivity() {
         }
 
 
-        // Adding a listener to handle snap-to-nearest-point
-        binding.flowSpeedSeekBar.setOnSeekBarChangeListener(object :
-            SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                // No action required during dragging
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                // No action required when touch starts
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {
-                seekBar?.let {
-                    val progress = it.progress
-                    // Snap to the nearest point (0-6)
-                    val nearestPoint = (progress / 1.0).roundToInt()
-                    it.progress = nearestPoint
-                }
-            }
-        })
-
         navigationHandler()
     }
 
@@ -58,18 +37,20 @@ class HazardsActivity : AppCompatActivity() {
     //handle click event
     private fun navigationHandler() {
         binding.backButton.setOnClickListener {
-            finish();
+            navigateHandler()
         }
-
         binding.nextButton.setOnClickListener {
-            navigateToOutlook()
+            navigateToResult()
         }
     }
 
-
     //handle navigation event
-    private fun navigateToOutlook() {
-        val intent = Intent(applicationContext, OutlookActivity::class.java)
+    private fun navigateHandler() {
+        finish();
+    }
+
+    private fun navigateToResult() {
+        val intent = Intent(applicationContext, ResultActivity::class.java)
         startActivity(intent)
     }
 

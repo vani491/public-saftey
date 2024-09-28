@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Rectangular background with rounded corners -->
+    <item
+        android:gravity="center"
+        android:height="15dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp"/>
+            <solid android:color="@color/light_blue"/>
+            <stroke
+                android:width="1dp"
+                android:color="@color/blue"/> <!-- Optional border -->
+        </shape>
+    </item>
+
+    <!-- Background (Inactive part of the SeekBar) -->
+    <item
+        android:gravity="center"
+        android:height="3dp"
+        android:left="0dp" android:right="0dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <!-- Progress (Active part of the SeekBar) -->
+    <item
+        android:gravity="center"
+        android:height="3dp"
+        android:left="0dp" android:right="0dp">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="50dp"/>
+                <solid android:color="@color/blue"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

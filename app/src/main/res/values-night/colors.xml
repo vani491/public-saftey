@@ -11,11 +11,13 @@
 
     <!--  _________________________  -->
     <color name="light_grey_blue">#A0BFF9</color>
-    <color name="dark_grey_light_blue">#D4E2FC</color>
-    <color name="grey_light_blue">#A0BFF9</color>
+    <color name="dark_light_grey_blue">#D4E2FC</color>
     <color name="entry_counter">#D4E2FC</color>
     <color name="entry_bar">#D4E2FC</color>
     <color name="back_circle">#D4E2FC</color>
     <color name="alert_back">#102C60</color>
+    <color name="telescope_back">#102C60</color>
+    <color name="light_grey_off_white">#EEF3FE</color>
+    <color name="circle_action_color">#1AFFFFFF</color>
 </resources>
 

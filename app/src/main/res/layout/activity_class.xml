@@ -11,6 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
         >
 
 
@@ -20,7 +21,10 @@
             android:layout_height="match_parent"
             tools:context=".MainActivity"
             android:orientation="vertical"
-            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
             >
 
             <LinearLayout
@@ -49,8 +53,8 @@
                         android:text="ECHO Risk Assessment"
                         android:textSize="18sp"
                         android:fontFamily="@font/roboto_condensed"
-                        android:textColor="@color/dark_grey_light_blue"
-
+                        android:textColor="@color/dark_light_grey_blue"
+                        android:textStyle="bold"
                         android:shadowDx="0"
                         android:shadowDy="7"
                         android:shadowRadius="5"
@@ -94,7 +98,7 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/roboto_condensed"
-                android:textColor="@color/dark_grey_light_blue"
+                android:textColor="@color/dark_light_grey_blue"
                 android:layout_marginTop="34dp"
                 />
 
@@ -165,7 +169,7 @@
                 android:text="Easy to enter, with little to no effort"
                 android:textSize="14dp"
                 android:fontFamily="@font/roboto_condensed"
-                android:textColor="@color/dark_grey_light_blue"
+                android:textColor="@color/dark_light_grey_blue"
                 />
             <View
                 android:layout_width="wrap_content"

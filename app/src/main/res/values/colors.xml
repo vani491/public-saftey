@@ -5,6 +5,7 @@
     <color name="colorSecondary">#D4E2FC</color>
 
     <color name="background">#EEF3FE</color>
+    <color name="off_white">#EEF3FE</color>
     <color name="surface">#FFFFFF</color>
     <color name="onPrimary">#FFFFFF</color>
     <color name="onSecondary">#000000</color>
@@ -20,12 +21,14 @@
 
     <!--  _________________________  -->
     <color name="light_grey_blue">#6C7C83</color>
-    <color name="dark_grey_light_blue">#394145</color>
-    <color name="grey_light_blue">#6C7C83</color>
+    <color name="dark_light_grey_blue">#394145</color>
     <color name="entry_counter">#5B91F4</color>
     <color name="entry_bar">#A0BFF9</color>
     <color name="back_circle">#D4E2FC</color>
     <color name="alert_back">#FADBD7</color>
+    <color name="telescope_back">#E3DDF2</color>
+    <color name="light_grey_off_white">#6C7C83</color>
+    <color name="circle_action_color">#1A102C60</color>
 
 
 </resources>
